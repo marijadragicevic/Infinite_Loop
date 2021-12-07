@@ -20,6 +20,10 @@ a {
   a:hover {
     transition: 0.6s ease; }
 
+p {
+  color: #757985;
+  line-height: 1.6; }
+
 ul {
   list-style-type: none; }
 
@@ -62,7 +66,8 @@ header {
       font-weight: 600; }
       header .container nav .logo h4:hover {
         color: #38B;
-        transition: 0.6s ease; }
+        transition: 0.6s ease;
+        cursor: pointer; }
   header .container hgroup {
     display: flex;
     justify-content: center;
@@ -91,5 +96,43 @@ header {
         color: white;
         font-size: 2.5rem;
         padding: 20px 40px; }
+
+.about {
+  padding: 50px 0px; }
+  .about .container hgroup {
+    padding-bottom: 30px; }
+    .about .container hgroup h3 {
+      color: #335578;
+      font-size: 3rem;
+      padding-bottom: 20px; }
+    .about .container hgroup p {
+      font-size: 1.3rem; }
+  .about .container .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    .about .container .row article {
+      flex: 0 0 45%;
+      padding-bottom: 30px; }
+      .about .container .row article h4 {
+        color: #335578;
+        font-size: 2.7rem;
+        padding: 15px; }
+        .about .container .row article h4 i {
+          padding: 10px; }
+      .about .container .row article p {
+        font-size: 1.3rem;
+        padding-bottom: 20px; }
+      .about .container .row article button {
+        padding: 15px 25px;
+        font-size: 1.3rem;
+        color: white;
+        background-color: #335578;
+        border: none; }
+        .about .container .row article button:hover {
+          background-color: #38B;
+          transition: 0.6s ease;
+          cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
