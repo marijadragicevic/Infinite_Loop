@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,500;0,600;0,900;1,700&display=swap');
+
+
+// VARIABLES
+$blue:#335578;
+$lightBlue: #38B;
+$white:white;
+$transition: .6s ease;
+$padding:50px 0px;
+
+
+// DEAFULT STYLES
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+
+    @media(max-width:768px) {
+        width: 100%;
+    }
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        transition: $transition;
+    }
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}         
+
+// HEADER SECTION
+
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)),
+    url(img/infinite-loop-01.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: $white;
+    background-attachment: fixed;
+
+    .container{
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0px;
+
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                li{
+                   
+
+                    a{
+                        color: $white;
+                        size: 1.4rem;
+                        padding: 10px;
+
+
+                        &:hover{
+                            background-color: $blue;
+                            transition: $transition;
+                        }
+                    }
+                }
+            }
+
+            .logo{
+
+                h4{
+                    color: $white;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+
+                    &:hover{
+                        color: $lightBlue;
+                        transition: $transition;
+                    }
+                }
+            }
+        }
+
+        hgroup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 60vh;
+            text-shadow: 5px 5px 10px black;
+
+            h1{
+                font-size: 4rem;
+                font-weight: 500;
+                padding-bottom: 20px;
+
+            }
+
+            h4{
+                font-size: 1.7rem;
+                font-weight: 500;
+            }
+        } 
+
+        .arrow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            a {
+                background-color: $blue;
+
+                &:hover{
+                    background-color: $lightBlue;
+                    transform: scale(1.1);
+                    transition: $transition;
+                }
+
+                i {
+                    color: $white;
+                    font-size: 2.5rem;
+                    padding: 20px 40px;
+
+                }
+            }
+        }
+
+
+    }
+
+
+}
