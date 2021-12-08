@@ -233,3 +233,73 @@ header{
     }
 
 }
+
+
+// TESTIMONIAL SECTION
+
+.testimonial{
+    background-image: url(img/infinite-loop-02.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-attachment:fixed ;
+    padding: $padding;
+
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        hgroup{
+            text-align: center;
+
+
+            h2{
+                font-size: 3rem;
+                color: $white;
+                padding-bottom: 20px;
+            }
+
+            p{
+                color: $white;
+            }
+        }
+
+
+        .row{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 30px;
+
+            article{
+                flex: 0 0 30%;
+                text-align: center;
+
+
+                img{
+                    border-radius: 100%;
+                }
+
+                p{
+                    text-align: left;
+                    color: $white;
+                    padding: 10px 35px;
+                }
+
+                h5{
+                    font-size: 1.3rem;
+                    color: $white;
+                    text-align: right;
+                    font-style: italic;
+                    font-weight: 200;
+                }
+            }
+
+        }
+    }
+
+}
