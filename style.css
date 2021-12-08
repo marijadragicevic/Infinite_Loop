@@ -160,6 +160,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
       padding-top: 30px; }
       .testimonial .container .row article {
         flex: 0 0 30%;
@@ -176,5 +177,33 @@ header {
           text-align: right;
           font-style: italic;
           font-weight: 200; }
+
+.gallery {
+  padding: 50px 0px; }
+  .gallery .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .gallery .container hgroup {
+      text-align: center;
+      padding-bottom: 20px; }
+      .gallery .container hgroup h2 {
+        font-size: 3rem;
+        padding-bottom: 20px;
+        color: #335578; }
+    .gallery .container .row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; }
+      .gallery .container .row article {
+        flex: 0 0 18%; }
+        .gallery .container .row article img {
+          width: 100%;
+          height: 100%; }
+          .gallery .container .row article img:hover {
+            transform: scale(1.1);
+            transition-duration: 0.4s; }
 
 /*# sourceMappingURL=style.css.map */
