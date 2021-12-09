@@ -351,3 +351,127 @@ header{
         }
     }
 }
+
+
+// CONTACT SECTION
+
+.contact{
+    padding: $padding;
+    background-image: url(img/infinite-loop-03.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+       
+       
+        p{
+            color: $white;
+        }
+
+        hgroup{
+            text-align: center;
+            padding-bottom: 30px;
+
+
+            h2{
+                font-size: 3rem;
+                color: $white;
+                padding-bottom: 20px;
+            }
+
+        }
+
+        .row{
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding-bottom: 30px;
+
+
+            article{
+                flex: 0 0 40%;
+
+                form {
+
+                    input {
+                        padding: 10px;
+                        margin-bottom: 20px;
+                        width: 100%;
+                        background: none;
+                        border: 1.5px solid $white;
+                        font-size: 1.2rem;
+                        color: white;
+                        outline: none;
+                        border-radius: 5px;
+
+                        &::placeholder {
+                            color: white;
+                        }
+                    }
+
+                    textarea {
+                        padding: 20px;
+                        margin-bottom: 20px;
+                        width: 100%;
+                        background: none;
+                        border: 1.5px solid $white;
+                        font-size: 1.2rem;
+                        color: white;
+                        outline: none;
+                        border-radius: 5px;
+
+                        &::placeholder {
+                            color: white;
+                        }
+                 
+                    }
+
+                    button {
+                        padding: 10px 25px;
+                        font-size: 1.3rem;
+                        width: 55%;
+                        color: $white;
+                        background-color: $blue;
+                        border: none;
+                        border-radius: 5px;
+
+                        &:hover {
+                            background-color: $lightBlue;
+                            transition: $transition;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                  
+                
+                .col {
+                    display: flex;
+                    flex-direction: column;
+                    
+
+                    a{
+                        color: $white;
+                        font-size: 2rem;
+                        padding-bottom: 50px;
+
+                        &:hover {
+                            color: $lightBlue;
+                            transition: $transition;
+                        }
+                    }
+
+                }    
+            
+            }
+        }
+    }
+}
