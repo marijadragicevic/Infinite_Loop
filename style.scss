@@ -77,12 +77,22 @@ header{
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
             padding: 20px 0px;
+
+            @media (max-width:768px){
+                flex-direction: column;
+            }
 
             ul{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                flex-wrap: wrap;
+
+                @media (max-width:768px){
+                   justify-content: center;
+                }
 
                 li{
                    
@@ -92,10 +102,19 @@ header{
                         size: 1.4rem;
                         padding: 10px;
 
+                        @media (max-width:768px){
+                           font-size: 1.2rem;
+                           padding: 3px;
+                        }
 
                         &:hover{
                             background-color: $blue;
                             transition: $transition;
+
+                            @media (max-width:768px){
+                                background: none;
+                                color: $lightBlue;
+                            }
                         }
                     }
                 }
@@ -107,6 +126,7 @@ header{
                     color: $white;
                     font-size: 1.8rem;
                     font-weight: 600;
+                    padding-bottom: 10px;
 
                     &:hover{
                         color: $lightBlue;
@@ -122,19 +142,33 @@ header{
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            flex-wrap: wrap;
             height: 60vh;
             text-shadow: 5px 5px 10px black;
+
+            @media (max-width:768px){
+               height: 50vh;
+             }
 
             h1{
                 font-size: 4rem;
                 font-weight: 500;
                 padding-bottom: 20px;
 
+                @media (max-width:768px){
+                  font-size: 2.3rem;
+                }
+
             }
 
             h4{
                 font-size: 1.7rem;
                 font-weight: 500;
+
+                @media (max-width:768px){
+                    font-size: 1.2rem;
+                    text-align: center;
+                  }
             }
         } 
 
@@ -157,6 +191,10 @@ header{
                     font-size: 2.5rem;
                     padding: 20px 40px;
 
+                    @media (max-width:768px){
+                        font-size: 1.3rem;
+                      }
+
                 }
             }
         }
@@ -174,15 +212,28 @@ header{
         hgroup{
             padding-bottom: 30px;
 
+            @media (max-width:768px){
+                padding: 30px 10px;
+            }
+
             h3{
                 color: $blue;
                 font-size: 3rem;
                 padding-bottom: 20px;
 
+                @media (max-width:768px){
+                    font-size: 2rem;
+                    text-align: center;
+                }
+
             }
 
             p{
                 font-size: 1.3rem;
+
+                @media (max-width:768px){
+                    font-size: 1rem;
+                }
 
             }
         }
@@ -198,20 +249,39 @@ header{
                 flex: 0 0 45%;
                 padding-bottom: 30px;
 
+                @media (max-width:768px){
+                    flex: 0 0 100%;
+                    padding: 0 10px;
+                    margin-bottom: 10px;
+                }
 
                 h4{
                     color: $blue;
                     font-size: 2.7rem;
                     padding: 15px;
 
+
+                    @media (max-width:768px){
+                        font-size: 1.7rem;
+                        padding-bottom: 10px;
+                        text-align: center;
+ 
+                    }
+
                     i{
                         padding: 10px;
                     }
 
                 }
+
                 p{
                     font-size: 1.3rem;
                     padding-bottom: 20px;
+
+                    @media (max-width:768px){
+                        font-size: 1rem;
+                        padding-bottom: 5px;
+                    }
                 }
                
                 button{
@@ -220,6 +290,13 @@ header{
                     color: $white;
                     background-color: $blue;
                     border: none;
+
+                    @media (max-width:768px){
+                        font-size: 0.9rem;
+                        margin-top: 2px;
+                        padding: 10px 20px;
+                        
+                    }
 
                     &:hover{
                         background-color: $lightBlue;
@@ -252,19 +329,29 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         hgroup{
             text-align: center;
-
 
             h2{
                 font-size: 3rem;
                 color: $white;
                 padding-bottom: 20px;
+
+
+                
+                @media (max-width:768px){
+                    font-size: 2rem;
+                }
             }
 
             p{
                 color: $white;
+
+                @media (max-width:768px){
+                    font-size: 1rem;
+                }
             }
         }
 
@@ -280,6 +367,12 @@ header{
                 flex: 0 0 30%;
                 text-align: center;
 
+                @media (max-width:768px){
+                    flex: 0 0 100%;
+                    padding-bottom: 30px;
+
+                }
+
 
                 img{
                     border-radius: 100%;
@@ -289,6 +382,13 @@ header{
                     text-align: left;
                     color: $white;
                     padding: 10px 35px;
+
+                    
+                    @media (max-width:768px){
+                    font-size: 1rem;
+                    text-align: center;
+                    }
+
                 }
 
                 h5{
@@ -297,6 +397,12 @@ header{
                     text-align: right;
                     font-style: italic;
                     font-weight: 200;
+
+                    
+                @media (max-width:768px){
+                    font-size: 1.1rem;
+                    text-align: center;
+                }
                 }
             }
 
@@ -317,6 +423,7 @@ header{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
 
         hgroup{
             text-align: center;
@@ -326,8 +433,21 @@ header{
                 font-size: 3rem;
                 padding-bottom: 20px;
                 color: $blue;
+
+                @media (max-width:768px){
+                    font-size: 2rem;
+                }
             }
-        }
+
+            p{
+                @media (max-width:768px){
+                    font-size: 1rem;
+                    padding: 10px;
+                }
+            }
+        }   
+
+
 
         .row{
             display: flex;
@@ -338,13 +458,25 @@ header{
             article{
                 flex: 0 0 18%;
 
+                @media (max-width:768px){
+                    flex: 0 0 100%;
+                }
+
                 img{
                     width: 100%;
                     height: 100%;
 
+                    @media (max-width:768px){
+                        padding: 10px;
+                    }
+
                     &:hover{
                         transform: scale(1.1);
                         transition-duration: 0.4s;
+
+                        @media (max-width:768px){
+                            transform: scale(0.9);
+                        }
                     }
                 }
             }
@@ -374,6 +506,10 @@ header{
        
         p{
             color: $white;
+
+            @media (max-width:768px){
+                font-size: 1rem;
+            }
         }
 
         hgroup{
@@ -385,6 +521,10 @@ header{
                 font-size: 3rem;
                 color: $white;
                 padding-bottom: 20px;
+
+                @media (max-width:768px){
+                    font-size: 2rem;
+                }
             }
 
         }
@@ -400,7 +540,16 @@ header{
             article{
                 flex: 0 0 40%;
 
+
+                @media (max-width:768px){
+                   flex: 0 0 100%;
+                }
+
                 form {
+
+                    @media (max-width:768px){
+                        padding: 10px; 
+                    }
 
                     input {
                         padding: 10px;
@@ -456,12 +605,22 @@ header{
                 .col {
                     display: flex;
                     flex-direction: column;
+                    flex-wrap: wrap;
                     
+                    @media (max-width:768px){
+                        align-items: center;
+                        padding-top: 20px;
+                    }
 
                     a{
                         color: $white;
-                        font-size: 2rem;
+                        font-size: 1.5rem;
                         padding-bottom: 50px;
+
+                        @media (max-width:768px){
+                            font-size: 1.1rem;
+                            padding: 10px 0;
+                        }
 
                         &:hover {
                             color: $lightBlue;
